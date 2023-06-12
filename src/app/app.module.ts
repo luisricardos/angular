@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { InteractionComponent } from './interaction/interaction.component';
 import { StyleTestComponent } from './style-test/style-test.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StyleTestComponent } from './style-test/style-test.component';
     SelfEvaluationFormComponent,
     InterpolationComponent,
     InteractionComponent,
-    StyleTestComponent
+    StyleTestComponent,
+    StyleBindingComponent
   ],
   imports: [
     BrowserModule,
