@@ -8,6 +8,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { InteractionComponent } from './interaction/interaction.component';
 import { StyleTestComponent } from './style-test/style-test.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
     InterpolationComponent,
     InteractionComponent,
     StyleTestComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
