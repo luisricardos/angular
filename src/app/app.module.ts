@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SelfEvaluationFormComponent } from './self-evaluation-form/self-evaluation-form.component';
@@ -10,6 +11,7 @@ import { StyleTestComponent } from './style-test/style-test.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { TemplateReferenceVariablesComponent } from './template-reference-variab
     StyleTestComponent,
     StyleBindingComponent,
     EventBindingComponent,
-    TemplateReferenceVariablesComponent
+    TemplateReferenceVariablesComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
