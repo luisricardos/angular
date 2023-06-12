@@ -9,6 +9,7 @@ import { InteractionComponent } from './interaction/interaction.component';
 import { StyleTestComponent } from './style-test/style-test.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     InteractionComponent,
     StyleTestComponent,
     StyleBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TemplateReferenceVariablesComponent
   ],
   imports: [
     BrowserModule,
