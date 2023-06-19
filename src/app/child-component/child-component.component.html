@@ -1,0 +1,5 @@
+<h2>{{"Hello " + newAlias}}</h2>
+
+<p> Today's item: {{newAlias}}</p>
+<input type="text" #inputChild>
+<button (click)="fireEvent(inputChild)">Send Event to parent</button>

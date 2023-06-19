@@ -1,0 +1,48 @@
+<div style="margin-bottom: 5px">
+  <label style="margin-right: 5px">Should the line below be displayed?</label>
+  <select name="options" id="opt" (change)="onDropDownChange($event)">
+    <option value=0>   </option>
+    <option value=1>Yes</option>
+    <option value=2>No</option>
+  </select>
+</div>
+<div id="newLine" class="container">
+<span *ngIf="displayLine" class="title">Display or not this line</span>
+</div>
+
+<div style="margin-bottom: 5px">
+  <label style="margin-right: 5px">Which line do you want to see?</label>
+  <select name="options" id="opt" (change)="onDropDownChange2($event)">
+    <option value=0>   </option>
+    <option value=1>Line 1</option>
+    <option value=2>Line 2</option>
+  </select>
+</div>
+
+<div id="lines">
+    <span #lineOne *ngIf="displayLineOne; else lineTwo" >Line 1</span>
+    <ng-template #lineTwo>
+      <span >Line 2</span>
+    </ng-template>
+</div>
+
+  <div style="margin-top: 20px; margin-bottom: 5px">
+    <label style="margin-right: 5px">Which block do you want to see?</label>
+    <select name="options" id="opt" (change)="onDropDownChange3($event)">
+      <option value=0>   </option>
+      <option value=1>Block 1</option>
+      <option value=2>Block 2</option>
+    </select>
+
+
+  <ng-template #blockOne>
+    <h2>First Block</h2>
+  </ng-template>
+
+  <ng-template #blockTwo>
+    <h2>Second Block</h2>
+  </ng-template>
+
+<div id="BlockSwitch" *ngIf="displayBlock; then blockOne; else blockTwo"></div>
+
+</div>

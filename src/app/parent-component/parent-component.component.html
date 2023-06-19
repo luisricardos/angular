@@ -1,0 +1,10 @@
+<div>
+  <label>Please insert the message that you wanna send to the child component </label> <br>
+  <input style='margin-right: 10px' type="text" #includePhrase (input)="checkContent($event)">
+  <button id="btnTest" [disabled]="isDisableButton" (click)="cleanMessage(includePhrase)">Send Message</button>
+  <h3>{{messageFromChild}}</h3>
+  <br>
+</div>
+<div>
+   <app-child-component (childEvent)="messageFromChild=$event" [item]="currentItem"></app-child-component>
+</div>

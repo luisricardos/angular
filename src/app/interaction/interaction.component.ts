@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-interaction',
   template: `
-            <input type="text" class="inputClass" id="includePhrase" [disabled]="isDisabledText" oninput="checkContent(this)">
+            <input type="text" class="inputClass" id="includePhrase" [disabled]="isDisabledText" oninput="checkContent($event)">
             <button id="btnTest" [disabled]="isDisabledButton" type="button" onclick="enableDisable()"> Disable Test</button>
   `,
   styles: [`
@@ -36,8 +36,8 @@ import { Component } from '@angular/core';
 `]
 })
 export class InteractionComponent {
-  public isDisabledButton = false;
-  public isDisabledText = true;
+  public isDisabledButton = true;
+  public isDisabledText = false;
 
   constructor() {}
 

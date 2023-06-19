@@ -28,7 +28,7 @@
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["src/resources/switch-plus-tab.component.js"]
           },
           "configurations": {
             "production": {
